@@ -98,7 +98,6 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  margin-bottom: 4rem;
 }
 
 .left {
@@ -196,7 +195,7 @@ p {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  grid-gap: 3rem;
+  grid-gap: 2rem;
   width: 100%;
   margin-bottom: 4rem;
   margin-top: 6rem;
@@ -222,7 +221,7 @@ p {
 
 .image img {
   width: 100%;
-  height: 300px;
+  height: 250px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
@@ -238,7 +237,7 @@ p {
 }
 
 .card-body {
-  padding: 2rem 1rem;
+  padding: 1rem 1.7rem;
 }
 
 .price {
@@ -255,18 +254,18 @@ p {
   text-transform: uppercase;
   font-weight: 500;
   color: #777;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .card-title {
   padding-bottom: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .rating {
   display: flex;
   align-items: center;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 }
 
 .stars {
@@ -290,7 +289,8 @@ p {
 
 .duration {
   display: flex;
-  padding: 1.5rem 0.8rem;
+  justify-content: space-between;
+  margin: 1rem;
 }
 
 .duration .time,
@@ -300,7 +300,7 @@ p {
 }
 
 .time {
-  padding-right: 1.4rem;
+  padding-right: 1.2rem;
 }
 
 .duration img {
@@ -369,4 +369,61 @@ p {
 
 .section2 .btn-con {
   text-align: left;
+}
+
+/* Bootcamps Section */
+.bootcamp-section {
+  background-color: #f6f6f6;
+  color: #4e4e65;
+}
+
+.bootcamp-section a {
+  color: #fff;
+}
+
+.bootcamp-section .title2,
+h5 {
+  color: #fe1a95;
+}
+
+.b-camp-content h5 {
+  font-size: 1.5rem;
+}
+
+.b-camp-content p {
+  font-size: 1rem 0;
+}
+
+.bootcamps {
+  display: grid;
+  padding: 4rem 0;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 2rem;
+}
+
+.bootcamp {
+  background-color: #fff;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bootcamp:hover {
+  transform: translateY(-9px);
+  box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: #43d7b5;
+  color: #fff;
+}
+
+.b-camp-content {
+  padding: 2rem 1.5rem;
+}
+
+.b-camp-content .btn-enroll {
+  color: #fe1a95;
+}
+
+.b-camp-content .btn-enroll:hover {
+  color: #fff;
 }
