@@ -9,7 +9,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   background-color: #23233b;
 }
 
@@ -20,15 +20,23 @@ a {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 p {
-  line-height: 2.1rem;
+  line-height: 2rem;
 }
 
 .header {
   min-height: 100vh;
+}
+
+.small-title {
+  border-bottom: 2px solid #fe1a95;
+  display: inline-block;
+  padding-bottom: 0.4rem;
+  margin-bottom: 4rem;
+  font-weight: 500;
 }
 
 .navigation {
@@ -90,6 +98,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  margin-bottom: 4rem;
 }
 
 .left {
@@ -110,7 +119,7 @@ p {
 .name {
   color: white;
   opacity: 0.7;
-  margin-bottom: 2rem;
+  margin-bottom: 1.7rem;
 }
 
 .btn {
@@ -133,7 +142,178 @@ p {
 
 .right .hero {
   position: absolute;
-  top: 15%;
+  top: 10%;
   right: 0;
   width: 95%;
+}
+
+/* Sections */
+.section {
+  padding: 5rem 10rem;
+  background-color: #171a38;
+}
+
+.title {
+  text-align: center;
+}
+
+.title2 {
+  position: relative;
+  padding-bottom: 2rem;
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.title2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 50%;
+  background-color: #fe1a95;
+  height: 2px;
+  transform: translateX(-50%);
+}
+
+.featured-para {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+.btn-con {
+  text-align: center;
+}
+
+.cards-con {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 3rem;
+  width: 100%;
+  margin-bottom: 4rem;
+  margin-top: 6rem;
+}
+
+.card {
+  background-color: #fff;
+  color: #1d1d34;
+  border-radius: 20px;
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 7px 20px 22px rgba(0, 0, 0, 0.63);
+  transform: translateY(-9px);
+}
+
+.image {
+  position: relative;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: 300px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+  transition: all 0.4s ease-in-out;
+}
+
+/* .image img:hover {
+  transform: scale(1.1);
+} */
+
+.card p {
+  color: #555;
+}
+
+.card-body {
+  padding: 2rem 1rem;
+}
+
+.price {
+  position: absolute;
+  bottom: 0;
+  left: 3%;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem 0.95rem;
+}
+
+.card-s-title {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #777;
+  font-size: 1.1rem;
+}
+
+.card-title {
+  padding-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.stars {
+  display: flex;
+}
+
+.stars img {
+  width: 25px;
+}
+
+.reviews p {
+  color: #777;
+  padding-left: 1rem;
+}
+
+.card-bottom {
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.duration {
+  display: flex;
+  padding: 1.5rem 0.8rem;
+}
+
+.duration .time,
+.duration .likes {
+  display: flex;
+  align-items: center;
+}
+
+.time {
+  padding-right: 1.4rem;
+}
+
+.duration img {
+  width: 20px;
+  margin-right: 0.4rem;
+}
+
+.btn-enroll {
+  border: 2px solid #fe1a95;
+  color: #fe1a95;
+  padding: 0.3rem 1.5rem;
+  border-radius: 30px;
+  display: inline-block;
+  align-self: center;
+  margin-right: 0.8rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-enroll:hover {
+  background-color: #fe1a95;
+  color: #fff;
 }
