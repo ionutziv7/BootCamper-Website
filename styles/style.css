@@ -427,3 +427,50 @@ h5 {
 .b-camp-content .btn-enroll:hover {
   color: #fff;
 }
+
+/* Reviews Section */
+.reviews-section {
+  background-color: #43d7b5;
+}
+
+.reviews-content {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.review-text {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+}
+
+.review-name {
+  color: rgb(241, 241, 241);
+}
+
+.reviews-content .stars {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.reviews-content .stars img {
+  width: 40px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+}
+
+.dot, .dot2, .dot3 {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #171a38;
+  margin: 1rem 0.2rem;
+}
+
+.dot2, .dot3 {
+  background-color: #171a3896;
+}
