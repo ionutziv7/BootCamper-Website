@@ -1,6 +1,4 @@
-# Animated-Website
-
-## BootCamper website
+# BootCamper website
 
 ### Web Design
 
