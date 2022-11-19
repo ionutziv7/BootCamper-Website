@@ -1,3 +1,4 @@
+/* Reset margin and padding, underline and bullet points */
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +7,7 @@
   list-style: none;
 }
 
+/* Font family and font size */
 body {
   font-family: "Poppins", sans-serif;
   color: white;
@@ -39,6 +41,7 @@ p {
   font-weight: 500;
 }
 
+/* Navigation  */
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -121,6 +124,7 @@ p {
   margin-bottom: 1.3rem;
 }
 
+/* Buttons  */
 .btn {
   padding: 0.8rem 1rem;
   text-transform: uppercase;
@@ -290,7 +294,7 @@ p {
 .duration {
   display: flex;
   justify-content: space-between;
-  margin: 1rem;
+  margin: 2rem;
 }
 
 .duration .time,
@@ -324,7 +328,7 @@ p {
   color: #fff;
 }
 
-/* Section 2 */
+/* Section 2 Featured */
 .section2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -521,4 +525,85 @@ h5 {
 .blog-content h4 {
   color: #171a38;
   padding: 1rem 0;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #23233b;
+  position: relative;
+}
+
+.contact-tab {
+  background-color: #43d7b5;
+  position: absolute;
+  text-align: center;
+  border-radius: 10px;
+  left: 50%;
+  top: -4%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  box-shadow: 3px 10px 25px rgba(0, 0, 0, 0.365);
+}
+
+.c-tab-content {
+  padding: 7rem 0;
+}
+
+.c-title {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.input-control {
+  display: flex;
+  justify-content: center;
+}
+
+.input-control input {
+  width: 30%;
+  padding: 1rem 0.4rem;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  border: 1px solid #171a38;
+  border-radius: 8px;
+  background-color: #43d7b5;
+  margin-right: 0.9rem;
+}
+
+.input-control input::placeholder {
+  color: #171a38;
+  font-weight: 600;
+}
+
+.btn-submit {
+  outline: none;
+  border: none;
+  background-color: #171a38;
+  color: #43d7b5;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  transform: translateY(0);
+}
+
+.bottom-nav {
+  padding-top: 10rem;
+}
+
+.b-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-navigation h3 {
+  padding-bottom: 2rem;
+}
+
+.b-navigation li {
+  margin: 0.6rem 0;
 }
