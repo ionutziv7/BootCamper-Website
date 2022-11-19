@@ -16,6 +16,7 @@
   - Grid
   - Flexbox
   - Media queries
+  - Keyframes
 - JavaScript
 
 ## Links:
