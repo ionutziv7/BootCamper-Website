@@ -1,6 +1,4 @@
-# Animated-Website
-
-## BootCamper website
+# BootCamper website
 
 ### Web Design
 
@@ -16,6 +14,7 @@
   - Grid
   - Flexbox
   - Media queries
+  - Keyframes
 - JavaScript
 
 ## Links:
